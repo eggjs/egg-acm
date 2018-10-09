@@ -14,7 +14,7 @@ describe('test/acm.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
-  it('should GET /', () => {
+  it('should getConfig ok', () => {
     return app.httpRequest()
       .get('/')
       .expect('hi, acm')

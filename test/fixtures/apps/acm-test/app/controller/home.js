@@ -4,7 +4,8 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, ' + this.app.plugins.acm.name;
+    const data = await this.ctx.acm.getConfig('test', 'DEFAULT_GROUP');
+    this.ctx.body = 'hi, ' + data;
   }
 }
 

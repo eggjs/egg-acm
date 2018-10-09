@@ -20,9 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-acm.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-acm
 
-<!--
-Description here.
--->
+应用配置管理 ACM（Application Configuration Management）前身为淘宝内部配置中心 Diamond，是一款在分布式架构环境中对应用配置进行集中管理和推送的应用配置中心产品。利用 ACM，您可以在微服务、DevOps、大数据等场景下极大减轻配置管理的工作量，并增强配置管理的服务能力。
 
 ## 依赖说明
 
@@ -55,17 +53,45 @@ exports.acm = {
 
 ## 使用场景
 
-- Why and What: 描述为什么会有这个插件，它主要在完成一件什么事情。
-尽可能描述详细。
-- How: 描述这个插件是怎样使用的，具体的示例代码，甚至提供一个完整的示例，并给出链接。
+在应用生命周期管理中，开发人员通常会将应用中需要变更的一些配置项或者元数据从代码中分离出来，放在单独的配置文件中管理，这些单独管理的内容就称为应用配置。这种分离应用配置的方法是管理应用变更的常见手段之一。发布应用后，运维人员或最终用户可以通过调整配置来适配环境，或调整应用程序的运行行为。
 
 ## 详细配置
 
+```js
+exports.acm = {
+  endpoint: 'acm.aliyun.com', // acm 控制台查看
+  namespace: '**********',    // acm 控制台查看
+  accessKey: '**********',    // acm 控制台查看
+  secretKey: '**********',    // acm 控制台查看
+  requestTimeout: 6000,       // 请求超时时间，默认6s
+};
+```
+
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
-## 单元测试
+## 使用方法
 
-<!-- 描述如何在单元测试中使用此插件，例如 schedule 如何触发。无则省略。-->
+可以通过 `app.acm` 或 `ctx.acm` 来访问 [acm-client](https://github.com/acm-group/acm-sdk-nodejs#api) 的 API
+```js
+// 主动拉取配置
+const content= await app.acm.getConfig('test', 'DEFAULT_GROUP');
+console.log('getConfig = ',content);
+
+// 监听数据更新
+app.acm.subscribe({
+  dataId: 'test',
+  group: 'DEFAULT_GROUP',
+}, content => {
+  console.log(content);
+});
+
+// 发布配置接口
+const content= await app.acm.publishSingle('test', 'DEFAULT_GROUP', '测试');
+console.log('getConfig = ',content);
+
+// 删除配置
+await acm.remove('test', 'DEFAULT_GROUP');
+```
 
 ## 提问交流
 
