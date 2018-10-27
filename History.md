@@ -3,6 +3,13 @@
 ==================
 
 **others**
+  * [[`04c08aa`](http://github.com/eggjs/egg-acm/commit/04c08aab1fc6c3f77003678cb4bc31d98ccad20f)] - chore: rename to egg-acmclient (#3) (zōng yǔ <<gxcsoccer@users.noreply.github.com>>),fatal: 没有发现名称，无法描述任何东西。
+
+
+1.0.0 / 2018-10-27
+==================
+
+**others**
 
 
 1.0.0 / 2018-10-27
