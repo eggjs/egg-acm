@@ -3,6 +3,12 @@
 ==================
 
 **others**
+
+
+1.0.0 / 2018-10-27
+==================
+
+**others**
   * [[`dff37d3`](http://github.com/eggjs/egg-acm/commit/dff37d3df75c14b1a5e0a871ca879112e4845e1d)] - chore: rename to egg-acm-client (#2) (zōng yǔ <<gxcsoccer@users.noreply.github.com>>)
 
 1.0.0 / 2018-10-27
