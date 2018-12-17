@@ -1,4 +1,4 @@
-# egg-acmclient
+# egg-acm-client
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -7,18 +7,18 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-acmclient.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-acmclient
-[travis-image]: https://img.shields.io/travis/eggjs/egg-acmclient.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-acmclient
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-acmclient.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-acmclient?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-acmclient.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-acmclient
-[snyk-image]: https://snyk.io/test/npm/egg-acmclient/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-acmclient
-[download-image]: https://img.shields.io/npm/dm/egg-acmclient.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-acmclient
+[npm-image]: https://img.shields.io/npm/v/egg-acm-client.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-acm-client
+[travis-image]: https://img.shields.io/travis/eggjs/egg-acm-client.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/egg-acm-client
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-acm-client.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/egg-acm-client?branch=master
+[david-image]: https://img.shields.io/david/eggjs/egg-acm-client.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/egg-acm-client
+[snyk-image]: https://snyk.io/test/npm/egg-acm-client/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-acm-client
+[download-image]: https://img.shields.io/npm/dm/egg-acm-client.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-acm-client
 
 应用配置管理 ACM（Application Configuration Management）前身为淘宝内部配置中心 Diamond，是一款在分布式架构环境中对应用配置进行集中管理和推送的应用配置中心产品。利用 ACM，您可以在微服务、DevOps、大数据等场景下极大减轻配置管理的工作量，并增强配置管理的服务能力。
 
@@ -26,7 +26,7 @@
 
 ### 依赖的 egg 版本
 
-egg-acmclient 版本 | egg 1.x
+egg-acm-client 版本 | egg 1.x
 --- | ---
 1.x | 😁
 0.x | ❌
@@ -47,7 +47,7 @@ egg-acmclient 版本 | egg 1.x
 // config/plugin.js
 exports.acm = {
   enable: true,
-  package: 'egg-acmclient',
+  package: 'egg-acm-client',
 };
 ```
 
