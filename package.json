@@ -1,6 +1,6 @@
 {
   "name": "egg-acm",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Aliyun ACM(Application Configuration Management) plugin for Egg.js",
   "eggPlugin": {
     "name": "acm"
