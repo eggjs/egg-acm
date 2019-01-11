@@ -1,5 +1,5 @@
 {
-  "name": "egg-acm-client",
+  "name": "egg-acm",
   "version": "1.0.0",
   "description": "Aliyun ACM(Application Configuration Management) plugin for Egg.js",
   "eggPlugin": {
@@ -36,11 +36,11 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
     "app",
     "config",
-    "lib"
+    "agent.js",
+    "lib",
+    "app.js"
   ],
   "ci": {
     "version": "8, 10"
